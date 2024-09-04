@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>manage</display-name>
+  <welcome-file-list>
+    <welcome-file>create.jsp</welcome-file>
+    <welcome-file>read.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>login.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>UpdateprojectServlet</display-name>
+    <servlet-name>UpdateprojectServlet</servlet-name>
+    <servlet-class>com.manage.web.UpdateprojectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateprojectServlet</servlet-name>
+    <url-pattern>/UpdateprojectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteprojectServlet</display-name>
+    <servlet-name>DeleteprojectServlet</servlet-name>
+    <servlet-class>com.manage.web.DeleteprojectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteprojectServlet</servlet-name>
+    <url-pattern>/DeleteprojectServlet</url-pattern>
+  </servlet-mapping>
+ 
+  
+</web-app>
